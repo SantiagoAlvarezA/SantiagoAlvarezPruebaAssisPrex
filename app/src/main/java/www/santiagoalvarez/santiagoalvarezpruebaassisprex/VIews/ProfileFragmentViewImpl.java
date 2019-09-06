@@ -84,5 +84,4 @@ public class ProfileFragmentViewImpl extends Fragment implements ProfileFragment
         text_phone.setText(phone);
     }
 
-
 }
