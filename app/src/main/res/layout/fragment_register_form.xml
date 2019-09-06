@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".VIews.RegisterFormFragmentViewImpl">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:padding="@dimen/dimen_24">
+
+            <ImageView
+                android:id="@+id/icon_image_view"
+                android:layout_width="@dimen/dimen_125"
+                android:layout_height="@dimen/dimen_125"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="@dimen/dimen_12"
+                android:src="@drawable/ic_users" />
+
+
+            <LinearLayout
+
+
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_500"
+                android:layout_below="@+id/icon_image_view"
+                android:background="@drawable/form_register"
+                android:orientation="vertical">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/name_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:hint="@string/str_input_name">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/textInput_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName|none" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/email_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:hint="@string/str_input_email">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/textInput_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textEmailAddress|none" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/password_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:hint="@string/str_input_password">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/textInput_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPassword|none" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/phone_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_12"
+                    android:layout_marginTop="24dp"
+                    android:hint="@string/str_input_phone">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/textInput_phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="phone|none" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_150">
+
+                    <Button
+                        android:id="@+id/btn_next"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_margin="@dimen/dimen_24"
+                        android:background="@drawable/btn_round"
+                        android:text="@string/str_next"
+                        android:textColor="@color/colorWhite" />
+                </RelativeLayout>
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+</FrameLayout>
